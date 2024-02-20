@@ -19,7 +19,7 @@ public class StatsServiceTest {
     public void shouldFindMaxSalesDay() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expectedDay = 6;
+        long expectedDay = 8;
         long actualDay = service.getMaxSales(sales);
 
         Assertions.assertEquals(expectedDay, actualDay);
